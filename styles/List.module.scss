@@ -1,0 +1,13 @@
+@import 'mixins';
+
+$list-top-bottom-padding: 8px;
+
+ul.list {
+  padding-top: $list-top-bottom-padding;
+  padding-bottom: $list-top-bottom-padding;
+
+  margin: 0;
+  padding: 0;
+  position: relative;
+  list-style-type: none;
+}

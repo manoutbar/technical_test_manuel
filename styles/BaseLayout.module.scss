@@ -1,0 +1,24 @@
+@import 'mixins';
+
+$root-xs-padding: 16px;
+$root-sm-padding: 24px;
+$base-background-color: #bbb;
+
+.root {
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  
+  &,
+  & + footer {
+    padding-left: $root-xs-padding;
+    padding-right: $root-xs-padding;
+  
+    @include respond-to('sm') {
+      padding-left: $root-sm-padding;
+      padding-right: $root-sm-padding;
+    }  
+  }
+}
